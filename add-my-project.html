@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image" href="/asset/favicon/favicon-16x16.png"
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+  <body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top border-bottom" style="background-color:#ced4da;">
+        <div class="container" >
+          <a class="navbar-brand" href="#">
+            <img src="/asset/img/dumbways.png" alt="Logo" width="32" height="25" class="d-inline-block align-text-top"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold active" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/add-my-project.html">Add Project</a>
+                    </li>  
+                </ul>
+            </div>
+            <div class="position-relative">
+                <div class="d-flex">
+                    <a class="btn btn-dark rounded-3" href="contact.html">Contact Me</a>
+                </div>
+            </div>
+            </div>
+        </div>
+      </nav>
+<!-- END NAVBAR -->
+    <!--form add project start-->
+<section class="form mt-main">
+        <div class="container-fluid py-5" style="background-color:#dee2e6;">
+            <div class="row justify-content-center">
+                <h1 class="text-center fw_black">ADD MY PROJECT</h1>
+            </div>
+            <div class="row justify-content-center">
+                <form class="row col-12 col-md-11 col-lg-10 col-xl-8 g-3 fs-3">
+                    <div class="col-12">
+                        <label for="project-name" class="form-label mb-0 fw-bold">Project Name</label>
+                        <input type="text" class="projectName form-control mb-3 fs-4 p-form shadow" id="project-name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="start-date" class="form-label mb-0 fw-bold">Start Date</label>
+                        <input type="date" class="startDate form-control mb-3 fs-4 p-form shadow" id="start-date">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="end-date" class="form-label mb-0 fw-bold">End Date</label>
+                        <input type="date" class="endDate form-control mb-3 fs-4 p-form shadow" id="end-date">
+                    </div>
+                    
+                    <div class="col-12">
+                        <label for="description" class="form-label mb-0 fw-bold">Description</label>
+                        <textarea type="textarea" class="description form-control mb-3 fs-4 p-form shadow" id="description" rows="5"></textarea>
+                    </div>
+                    
+                    <div class="col-12">
+                        <label class="form-label mb-3 fw-bold">Technologies</label>
+                        <div class="row">
+                            <div class="col-5 pb-3">
+                                <input class="form-check-input me-1 me-md-2 shadow" type="checkbox" name="node">
+                                <label class="form-check-label pt-tech" for="node">Node Js</label>
+                            </div>
+                            <div class="col-7 pb-3">
+                                <input class="form-check-input me-1 me-md-2 shadow" type="checkbox" name="react">
+                                <label class="form-check-label pt-tech" for="react">React Js</label>
+                            </div>
+                            <div class="col-5">
+                                <input class="form-check-input me-1 me-md-2 shadow" type="checkbox" name="vue">
+                                <label class="form-check-label pt-tech" for="vue">Vue Js</label>
+                            </div>
+                            <div class="col-7">
+                                <input class="form-check-input me-1 me-md-2 shadow" type="checkbox" name="typescript">
+                                <label class="form-check-label pt-tech" for="typescript">TypeScript</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="form-label mb-0 mt-4 fw-bold">Upload Image</label>
+                    <div class="upload col-12 mb-3 position-relative mt-1" style="height: 64px;">
+                        
+                        <div class="boxField d-flex justify-content-between mb-3 pe-1 shadow rounded bg-white h-100">
+                            <div class="choose bg-secondary opacity-50">choose</div>
+                            <div class="" style="height: 100%;">
+                                <img src="/asset/img/link.png" height="100%" alt="Choose Image" class="linkLogo">
+                            </div>
+                            <input type="file" accept="image/png, image/jpeg" class="uploadImg form-control" style="height: 100%; width: 98%; position: absolute; z-index: 99; opacity: 0;">
+                        </div>
+                    </div>
+                    <div class="col-12 mt-6 mb-form d-flex justify-content-end">
+                        <button type="button" class="btn btn-dark rounded-5 fw-bold"><h3>submit</h3></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<!--form add project end-->
+  <script src="/asset/js/ForContactForm.js"></script>
+</body>
+</html>
